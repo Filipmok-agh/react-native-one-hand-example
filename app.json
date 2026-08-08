@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Thumbdock",
+    "slug": "react-native-one-hand",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "scheme": "rnonehand",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.reactnativeonehand"
+    },
+    "android": {
+      "package": "com.example.reactnativeonehand",
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "@react-native-community/datetimepicker",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app opens the photo picker to demonstrate one-hand mode with system pickers.",
+          "cameraPermission": "The app opens the native camera to demonstrate one-hand mode with system capture UI."
+        }
+      ],
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "PORTRAIT_UP"
+        }
+      ],
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "The app opens the system event editor to demonstrate one-hand mode with calendar UI."
+        }
+      ],
+      "expo-video"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
